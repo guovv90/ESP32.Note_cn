@@ -15,6 +15,53 @@ ESP-IDF是一套Espressif 专门为用户在开发ESP32时提供的一套完整�
 - 开发工具
 - 使用简介README.md
 
+
+
+## 快速入门 ##
+
+### 配置工程 ###
+`make menuconfig`
+
+### 编译 ###
+`make -j4 all`
+
+### 烧写flash  ###
+`make -j4 flash`
+
+### 监视 ###
+`make monitor`
+
+退出 `Ctrl-]`
+
+### 只编译应用程序 ###
+`make app` 
+
+### 并行编译 ###
+ `make -jN` 其中 `N` 是并行编译数量 (通常是CPU的核数量加1)
+
+```
+make -j5 flash monitor
+```
+
+### 擦除 Flash ###
+ `make erase_flash`
+
+### 分区表 ###
+编译完项目后，”build” 目录将包含一个名为 “my_app.bin” 的二进制文件。这是一个可由 bootloader 加载的 ESP32 映像二进制文件。
+
+一个 ESP32 flash 可以包含多个应用程序，以及多种数据（校准数据，文件系统，参数存储等）。因此，分区表烧录在 flash 偏移地址 0x8000 的地方。
+
+分区表中的每个条目都有一个名称（标签），类型（app，数据或其他），子类型和闪存中分区表被存放的偏移量。
+
+使用分区表最简单的方法是 make menuconfig 并选择一个简单的预定义分区表:
+
+- “Single factory app, no OTA”
+- “Factory app, two OTA definitions”
+
+在这两种情况下，出厂应用程序的烧录偏移为 0x10000。运行 make partition_table，可以打印分区表摘要。
+
+
+
 ## 应用程序的启动流程 ##
 
 本文将会介绍 ESP32 从上电到运行 ``app_main``函数中间所经历的步骤（即启动流程）。
@@ -192,47 +239,3 @@ void app_main()
 	// 其他程序
 }
 ```
-
-## 快速入门 ##
-
-### 配置工程 ###
-`make menuconfig`
-
-### 编译 ###
-`make -j4 all`
-
-### 烧写flash  ###
-`make -j4 flash`
-
-### 监视 ###
-`make monitor`
-
-退出 `Ctrl-]`
-
-### 只编译应用程序 ###
-`make app` 
-
-### 并行编译 ###
- `make -jN` 其中 `N` 是并行编译数量 (通常是CPU的核数量加1)
-
-```
-make -j5 flash monitor
-```
-
-## The Partition Table
-编译完项目后，”build” 目录将包含一个名为 “my_app.bin” 的二进制文件。这是一个可由 bootloader 加载的 ESP32 映像二进制文件。
-
-一个 ESP32 flash 可以包含多个应用程序，以及多种数据（校准数据，文件系统，参数存储等）。因此，分区表烧录在 flash 偏移地址 0x8000 的地方。
-
-分区表中的每个条目都有一个名称（标签），类型（app，数据或其他），子类型和闪存中分区表被存放的偏移量。
-
-使用分区表最简单的方法是 make menuconfig 并选择一个简单的预定义分区表:
-
-- “Single factory app, no OTA”
-- “Factory app, two OTA definitions”
-
-在这两种情况下，出厂应用程序的烧录偏移为 0x10000。运行 make partition_table，可以打印分区表摘要。
-
-### 擦除 Flash ###
- `make erase_flash`.
-
