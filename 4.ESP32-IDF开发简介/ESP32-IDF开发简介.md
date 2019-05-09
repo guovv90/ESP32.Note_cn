@@ -261,6 +261,9 @@ void app_main()
 >-  [ESP32 ADF ](https://github.com/espressif/esp-adf)Github ADF项目。
 >- [ESP32 资源合集 ](https://www.espressif.com/zh-hans/products/hardware/esp32/resources)ESP32 相关的所有文档和工具资源。
 
->- [ESP32芯片数据参考手册](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf)
+>- [ESP32芯片数据参考手册](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf )
 >- [ESP32-WROVER 模组参考手册](https://www.espressif.com/sites/default/files/documentation/esp32_wrover_datasheet_cn.pdf )
+>- [ESP32-LyraT使用指南](https://www.espressif.com/sites/default/files/documentation/esp32-lyrat_user_guide_cn.pdf )
+>- [ESP32-LyraT 原理图](https://dl.espressif.com/dl/schematics/esp32-lyrat-v4.3-schematic.pdff )
+>- [ESP32-IDF 编程指南](https://docs.espressif.com/projects/esp-idf/zh_CN/stable/index.html)
 >- [ESP32-IDF 编程指南](https://docs.espressif.com/projects/esp-idf/zh_CN/stable/index.html)
