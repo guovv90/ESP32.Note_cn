@@ -98,7 +98,7 @@
 决问题。
 >- [ESP32 GitHub ](https://github.com/espressif)乐鑫在 GitHub 上有众多开源的开发项目。
 >- [ESP32 工具 ](http://www.espressif.com/zh-hans/support/download/other-tools?keys=&field_type_tid%5B%5D=13)ESP32 flash 下载工具以及《ESP32 认证测试指南》。
->- [ESP32 IDF ](https://www.espressif.com/zh-hans/support/download/sdks-demos?keys=&field_type_tid%5B%5D=13)ESP32 所有版本 IDF。
+>- [ESP32 IDF ](https://github.com/espressif/esp-idf)Github IDF项目。
 >-  [ESP32 ADF ](https://github.com/espressif/esp-adf)Github ADF项目。
 >- [ESP32 资源合集 ](https://www.espressif.com/zh-hans/products/hardware/esp32/resources)ESP32 相关的所有文档和工具资源。
 
