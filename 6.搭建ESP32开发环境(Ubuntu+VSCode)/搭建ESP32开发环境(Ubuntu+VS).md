@@ -1,4 +1,4 @@
-# 搭建ESP32开发环境(Ubuntu+VS) #
+# 搭建ESP32开发环境(Ubuntu+VSCode) #
 ![](./kf1.png)
 
 ## 概述 ##
@@ -52,4 +52,8 @@
      ![](./kf7.png)
      ![](./kf8.png)
      - 这样就可以愉快的`Ubuntu` 和`windows` 界面来回切换不用 `Ctrl + Alt` ，主机和虚拟机之间` 复制粘贴 `也可以，文件共享方便多了。
-     - 
+     - 更新软件列表 ` sudo apt-get update`,更新软件` sudo apt-get upgrade `
+
+9. 在Ubuntu内安装 ` vscode ` 
+    - 软件在 `Ubuntu软件`内找到，点击`安装`，这和 APP store 很像。又是一番等待...
+    ![](./kf9.png)
