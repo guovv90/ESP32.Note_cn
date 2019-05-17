@@ -53,7 +53,11 @@
      ![](./kf8.png)
      - 这样就可以愉快的`Ubuntu` 和`windows` 界面来回切换不用 `Ctrl + Alt` ，主机和虚拟机之间` 复制粘贴 `也可以，文件共享方便多了。
      - 更新软件列表 ` sudo apt-get update`,更新软件` sudo apt-get upgrade `
+     - 常用的软件可以拖动到 桌面的左面栏，方便使用。
 
 9. 在Ubuntu内安装 ` vscode ` 
     - 软件在 `Ubuntu软件`内找到，点击`安装`，这和 APP store 很像。又是一番等待...
     ![](./kf9.png)
+    - 安装完成后，设置VScode 的开发环境，安装插件`language` , ` c\c++`...，笔者使用的`Settings Sync`,一建同步原来配置（现在笔者使用的时候是原来配置好的，需要`github`的账号，现在开发基本都在VScode上，包括现在编写的开发历程，确实非常好用的轻量编辑器，当然这也是有强大的插件库的原因）
+    - 输入`shift + ctrl + d`，输入原来`GitHub Token`,`GitHub Gist`,又是一番同步配置等待，完成后重启vscode
+    - 新打开提示没有 `git` ，我们安装下git `sudo apt-get install git`.
