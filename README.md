@@ -16,7 +16,7 @@
 
 ### [5.ESP32-ADF开发简介](./5.ESP32-ADF开发简介/ESP32-ADF开发简介.md "") ###
 
-### [6.搭建ESP32开发环境(Ubuntu+VSCode)](./6.搭建ESP32开发环境(Ubuntu+VSCode)/搭建ESP32开发环境(Ubuntu+VSCode).md "") ###
+### [6.搭建ESP32开发环境(Ubuntu+VSCode)](./6.搭建ESP32开发环境(Ubuntu+VSCode)/搭建ESP32开发环境(Ubuntu+VS).md "") ###
 
 ### [7.Hello_world](./7.Hello_world/Hello_world.md "") ###
 
