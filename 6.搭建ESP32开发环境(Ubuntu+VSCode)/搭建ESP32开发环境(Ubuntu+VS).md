@@ -115,7 +115,7 @@
 2. VS Code 任务配置 ` tasks.json`
    ![](./kf19.png) 
     快捷键 | 执行的命令 | 功能
-    | :-: | :-: | :-: | -:
+    - | :-:| -:
     F5 | make -j8 | 编译 
     F6 | make -j8 flash | 编译、下载 
     F7 | make monitor | 监视器
