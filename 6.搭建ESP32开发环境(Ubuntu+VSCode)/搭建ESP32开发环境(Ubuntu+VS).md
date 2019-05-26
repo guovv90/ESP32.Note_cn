@@ -115,14 +115,14 @@
 2. VS Code 任务配置 ` tasks.json`
    ![](./kf19.png) 
 
-快捷键 | 执行的命令 | 功能
- - | :-:| -:
- F5 | make -j8 | 编译 
-F6 | make -j8 flash | 编译、下载 
-F7 | make monitor | 监视器
-F8 | make clean| 清除编译
-F9 | make erase_flash | 擦除 flash
-F10 | make menuconfig | 打开 menuconfig
+    快捷键 | 执行的命令 | 功能
+    | - | - | - |
+    F5 | make -j8 | 编译 
+    F6 | make -j8 flash | 编译、下载 
+    F7 | make monitor | 监视器
+    F8 | make clean| 清除编译
+    F9 | make erase_flash | 擦除 flash
+    F10 | make menuconfig | 打开 menuconfig
 
 3. VS Code 快捷键配置 ` keybindings.json `
     ![](./kf20.png)   
